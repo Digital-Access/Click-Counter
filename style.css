@@ -1,0 +1,126 @@
+@font-face {
+  font-family: gothamMed;
+  src: url(https://a.storyblok.com/f/112136/x/5e402b0b67/gotham-medium.otf);
+}
+
+@font-face {
+  font-family: gothamLight;
+  src: url(https://a.storyblok.com/f/112136/x/1e7232d46e/gotham-book.otf);
+}
+
+@font-face {
+  font-family: gothamBold;
+  src: url(https://a.storyblok.com/f/112136/x/361f778928/gotham-bold.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: gothamLight, Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+body {
+  background-color: rgb(87, 87, 87);
+  background-image: url(https://a.storyblok.com/f/112136/1920x1409/5ba98e7f92/texture-bg-5efdcf3715f790-74747584-606d864d1b22d1-55861802.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.heading-container {
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.time-left__container {
+  display: flex;
+  justify-content: flex-end;
+  height: 1rem;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.click-target__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+}
+
+.click-target {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: solid 4px;
+  border-radius: 100px;
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+  margin: 1rem;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 4px 4px;
+  background-color: #25517b;
+}
+
+.click-counter {
+  height: 1rem;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.high-score__container {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.click-target__animation {
+  background-color: none !important;
+}
+
+.click-target__animation:active {
+  transition: all 0.1s ease-in;
+  background-color: crimson;
+  box-shadow: inset rgb(220, 20, 80) 0 0 4px 4px;
+}
+
+.play-again {
+  border-radius: 5px;
+  background-color: #25517b;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  margin: 1rem;
+  margin-top: 0;
+  cursor: pointer;
+  display: none;
+}

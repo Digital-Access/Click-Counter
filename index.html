@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Click Counter</title>
+  </head>
+  <body>
+    <div class="heading-container">
+      <h1>Click as fast as you can!</h1>
+      <p>
+        Have a quick break and get your frustrations out by seeing how many
+        clicks you can do before the time runs out !
+      </p>
+    </div>
+    <div id="container" class="container">
+      <div class="time-left__container">
+        <div class="time-left" id="time-left"></div>
+      </div>
+      <div class="click-target__container" id="click-target__container">
+        <button class="click-target" id="click-target">
+          <div class="click-countdown" id="click-countdown">Start</div>
+          <div class="target-animation"><div class="animation"></div></div>
+        </button>
+      </div>
+      <div class="click-counter" id="click-counter"></div>
+      <button class="play-again" id="play-again" >Try again?</button>
+      <div class="high-score__container">
+        <p class="high-score" id="high-score"></p>
+      </div>
+      
+    </div>
+  </body>
+</html>
