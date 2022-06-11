@@ -8,9 +8,12 @@ const playAgain = document.getElementById("play-again");
 
 let latestHighScore = localStorage.getItem("score");
 
-if (localStorage.getItem("score") === null) {
-  latestHighScore = localStorage.setItem("score", 0);
+function setScore() {
+  if (latestHighScore === null || latestHighScore === undefined) {
+    latestHighScore = localStorage.setItem("score", 0);
+  }
 }
+
 highScore.textContent = `High Score: ${latestHighScore}`;
 
 function startGame() {
@@ -79,3 +82,4 @@ function startGame() {
 
 clickCountdown.addEventListener("click", startGame);
 playAgain.addEventListener("click", startGame);
+window.addEventListener("load", setScore);
